@@ -3,6 +3,7 @@ import "./index.css";
 import { initialFetch } from "../../apiCalls.js";
 import { Buttons } from "../navigationButtonContainer";
 import { AsideContainer } from "../AsideContainer";
+import CardContainer from "../CardContainer";
 
 class App extends Component {
   constructor() {
@@ -12,17 +13,21 @@ class App extends Component {
       people: [],
       planets: [],
       vehicles: [],
-      films: []
+      film: [],
+      selected: ""
     };
   }
 
-  openingCrawl = async url => {
+  async componentDidMount() {
+    const url = "https://swapi.co/api/films";
     const films = await initialFetch(url);
+    const randomNumber = Math.floor(Math.random() * 6);
+    const film = films[randomNumber];
 
     this.setState({
-      films
+      film
     });
-  };
+  }
 
   handleSubmit = async string => {
     switch (string) {
@@ -32,7 +37,8 @@ class App extends Component {
           string
         );
         this.setState({
-          people
+          people,
+          selected: string
         });
         break;
       case "planets":
@@ -41,7 +47,8 @@ class App extends Component {
           string
         );
         this.setState({
-          planets
+          planets,
+          selected: string
         });
         break;
       case "vehicles":
@@ -50,7 +57,8 @@ class App extends Component {
           string
         );
         this.setState({
-          vehicles
+          vehicles,
+          selected: string
         });
         break;
     }
@@ -64,14 +72,11 @@ class App extends Component {
         </header>
         <Buttons handleSubmit={this.handleSubmit} />
         <aside>
-          <AsideContainer state={this.state} />
+          <AsideContainer film={this.state.film} />
+          <CardContainer data={this.state} />
         </aside>
       </div>
     );
-  }
-  componentDidMount() {
-    const url = "https://swapi.co/api/films";
-    this.openingCrawl(url);
   }
 }
 
