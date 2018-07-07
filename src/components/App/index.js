@@ -10,12 +10,9 @@ class App extends Component {
     super();
 
     this.state = {
-      people: [],
-      planets: [],
-      vehicles: [],
+      cards: [],
       film: [],
-      favorites: [],
-      selected: ""
+      favorites: []
     };
   }
 
@@ -38,8 +35,7 @@ class App extends Component {
           string
         );
         this.setState({
-          people,
-          selected: string
+          cards: people
         });
         break;
       case "planets":
@@ -48,8 +44,7 @@ class App extends Component {
           string
         );
         this.setState({
-          planets,
-          selected: string
+          cards: planets
         });
         break;
       case "vehicles":
@@ -58,8 +53,7 @@ class App extends Component {
           string
         );
         this.setState({
-          vehicles,
-          selected: string
+          cards: vehicles
         });
         break;
     }
@@ -73,17 +67,26 @@ class App extends Component {
     });
   };
 
+  displayFavorites = () => {
+    this.setState({
+      cards: this.state.favorites
+    });
+  };
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">SwapiBox</h1>
+          <button onClick={() => this.displayFavorites()}>
+            display favorites
+          </button>
         </header>
         <Buttons handleSubmit={this.handleSubmit} />
         <aside>
           <AsideContainer film={this.state.film} />
           <CardContainer
-            data={this.state}
+            cards={this.state.cards}
             handleFavorites={this.handleFavorites}
           />
         </aside>
