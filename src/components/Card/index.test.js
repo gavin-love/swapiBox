@@ -17,15 +17,7 @@ describe("Card", () => {
       species: "Human",
       population: "200000"
     };
-    wrapper = shallow(
-      <Card
-        name={mockData.name}
-        homeworld={mockData.homeworld}
-        species={mockData.species}
-        population={mockData.population}
-        key={"420"}
-      />
-    );
+    wrapper = shallow(<Card info={mockData} />);
 
     expect(wrapper).toMatchSnapshot();
   });
@@ -38,16 +30,9 @@ describe("Card", () => {
       climate: "temperate",
       residents: ["Leia Organa", "Bail Prestor Organa", "Raymus Antilles"]
     };
-    wrapper = shallow(
-      <Card
-        name={mockData.name}
-        terrain={mockData.terrain}
-        population={mockData.population}
-        climate={mockData.climate}
-        residents={mockData.residents}
-        key={"420"}
-      />
-    );
+
+    wrapper = shallow(<Card info={mockData} />);
+
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -59,15 +44,8 @@ describe("Card", () => {
       passengers: "30"
     };
 
-    wrapper = shallow(
-      <Card
-        name={mockData.name}
-        model={mockData.model}
-        class={mockData.class}
-        passengers={mockData.passengers}
-        key={"420"}
-      />
-    );
+    wrapper = shallow(<Card info={mockData} />);
+
     expect(wrapper).toMatchSnapshot();
   });
 });

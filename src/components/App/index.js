@@ -60,6 +60,11 @@ class App extends Component {
   };
 
   handleFavorites = favorite => {
+    //if it not in favorites add it and give card addtional class
+    //
+    ///map over each object and remove match : const favorites = [...this.state.favorites, favorite]
+
+    this.state.favorites.includes(favorite);
     const favorites = [...this.state.favorites, favorite];
 
     this.setState({
