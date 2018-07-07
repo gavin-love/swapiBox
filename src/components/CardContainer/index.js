@@ -10,7 +10,9 @@ const CardContainer = props => {
           homeworld={person.homeworld}
           species={person.species}
           population={person.population}
+          favorite={person.favorite}
           key={index}
+          handleFavorites={props.handleFavorites}
         />
       );
     });
@@ -26,7 +28,9 @@ const CardContainer = props => {
           population={planet.population}
           climate={planet.climate}
           residents={planet.residents}
+          favorite={planet.favorite}
           key={index}
+          handleFavorites={props.handleFavorites}
         />
       );
     });
@@ -41,7 +45,9 @@ const CardContainer = props => {
           model={vehicle.model}
           class={vehicle.clAss}
           passengers={vehicle.passengers}
+          favorite={vehicle.favorite}
           key={index}
+          handleFavorites={props.handleFavorites}
         />
       );
     });

@@ -14,6 +14,7 @@ class App extends Component {
       planets: [],
       vehicles: [],
       film: [],
+      favorites: [],
       selected: ""
     };
   }
@@ -64,6 +65,14 @@ class App extends Component {
     }
   };
 
+  handleFavorites = favorite => {
+    const favorites = [...this.state.favorites, favorite];
+
+    this.setState({
+      favorites
+    });
+  };
+
   render() {
     return (
       <div className="App">
@@ -73,7 +82,10 @@ class App extends Component {
         <Buttons handleSubmit={this.handleSubmit} />
         <aside>
           <AsideContainer film={this.state.film} />
-          <CardContainer data={this.state} />
+          <CardContainer
+            data={this.state}
+            handleFavorites={this.handleFavorites}
+          />
         </aside>
       </div>
     );

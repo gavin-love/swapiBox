@@ -31,8 +31,7 @@ export const createPerson = person => {
     name: person.name,
     homeworld: person.homeworld.name,
     species: person.species.name,
-    population: person.homeworld.population,
-    favorite: false
+    population: person.homeworld.population
   };
 };
 export default allPeople;

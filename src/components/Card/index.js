@@ -8,6 +8,7 @@ const Card = props => {
         <h1>{props.homeworld}</h1>
         <h1>{props.species}</h1>
         <h1>{props.population}</h1>
+        <button onClick={() => props.handleFavorites(props)}>favorite</button>
       </div>
     );
   }
@@ -20,6 +21,7 @@ const Card = props => {
         <h1>{props.population}</h1>
         <h1>{props.climate}</h1>
         <h1>{props.residents.map(resident => resident.name)}</h1>
+        <button onClick={() => props.handleFavorites(props)}>favorite</button>
       </div>
     );
   }
@@ -30,6 +32,7 @@ const Card = props => {
         <h1>{props.model}</h1>
         <h1>{props.class}</h1>
         <h1>{props.passengers}</h1>
+        <button onClick={() => props.handleFavorites(props)}>favorite</button>
       </div>
     );
   }

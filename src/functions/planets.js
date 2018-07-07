@@ -5,7 +5,7 @@ const allPlanets = async data => {
 
 const planetAndResidents = async planet => {
   const residents = await residentsFetch(planet.residents);
-  return { ...planet, residents, favorite: false };
+  return { ...planet, residents };
 };
 
 const residentsFetch = planetResidents => {

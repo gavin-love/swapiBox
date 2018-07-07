@@ -212,9 +212,7 @@ ShallowWrapper {
           temperate
 </h1>,
         <h1>
-          Leia Organa
-          Bail Prestor Organa
-          Raymus Antilles
+          
 </h1>,
       ],
     },
@@ -270,16 +268,16 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Leia Organa",
-            "Bail Prestor Organa",
-            "Raymus Antilles",
+            undefined,
+            undefined,
+            undefined,
           ],
         },
         "ref": null,
         "rendered": Array [
-          "Leia Organa",
-          "Bail Prestor Organa",
-          "Raymus Antilles",
+          undefined,
+          undefined,
+          undefined,
         ],
         "type": "h1",
       },
@@ -306,9 +304,7 @@ ShallowWrapper {
             temperate
 </h1>,
           <h1>
-            Leia Organa
-            Bail Prestor Organa
-            Raymus Antilles
+            
 </h1>,
         ],
       },
@@ -364,16 +360,16 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Leia Organa",
-              "Bail Prestor Organa",
-              "Raymus Antilles",
+              undefined,
+              undefined,
+              undefined,
             ],
           },
           "ref": null,
           "rendered": Array [
-            "Leia Organa",
-            "Bail Prestor Organa",
-            "Raymus Antilles",
+            undefined,
+            undefined,
+            undefined,
           ],
           "type": "h1",
         },

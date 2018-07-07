@@ -9,8 +9,7 @@ const allVehicles = async data => {
       name,
       model,
       clAss,
-      passengers,
-      favorite: false
+      passengers
     };
   });
   const resolvedVehicles = await Promise.all(vehicles);
