@@ -7,10 +7,14 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Card
-    homeworld="Tatooine"
-    name="Luke Skywalker"
-    population="200000"
-    species="Human"
+    info={
+        Object {
+            "homeworld": "Tatooine",
+            "name": "Luke Skywalker",
+            "population": "200000",
+            "species": "Human",
+          }
+    }
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -37,6 +41,11 @@ ShallowWrapper {
         <h1>
           200000
 </h1>,
+        <button
+          onClick={[Function]}
+>
+          favorite
+</button>,
       ],
     },
     "ref": null,
@@ -85,6 +94,18 @@ ShallowWrapper {
         "rendered": "200000",
         "type": "h1",
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "favorite",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "favorite",
+        "type": "button",
+      },
     ],
     "type": "div",
   },
@@ -107,6 +128,11 @@ ShallowWrapper {
           <h1>
             200000
 </h1>,
+          <button
+            onClick={[Function]}
+>
+            favorite
+</button>,
         ],
       },
       "ref": null,
@@ -155,6 +181,18 @@ ShallowWrapper {
           "rendered": "200000",
           "type": "h1",
         },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "favorite",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "favorite",
+          "type": "button",
+        },
       ],
       "type": "div",
     },
@@ -174,17 +212,19 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Card
-    climate="temperate"
-    name="Alderaan"
-    population="2000000000"
-    residents={
-        Array [
-            "Leia Organa",
-            "Bail Prestor Organa",
-            "Raymus Antilles",
-          ]
+    info={
+        Object {
+            "climate": "temperate",
+            "name": "Alderaan",
+            "population": "2000000000",
+            "residents": Array [
+              "Leia Organa",
+              "Bail Prestor Organa",
+              "Raymus Antilles",
+            ],
+            "terrain": "grasslands, mountains",
+          }
     }
-    terrain="grasslands, mountains"
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -214,6 +254,11 @@ ShallowWrapper {
         <h1>
           
 </h1>,
+        <button
+          onClick={[Function]}
+>
+          favorite
+</button>,
       ],
     },
     "ref": null,
@@ -281,6 +326,18 @@ ShallowWrapper {
         ],
         "type": "h1",
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "favorite",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "favorite",
+        "type": "button",
+      },
     ],
     "type": "div",
   },
@@ -306,6 +363,11 @@ ShallowWrapper {
           <h1>
             
 </h1>,
+          <button
+            onClick={[Function]}
+>
+            favorite
+</button>,
         ],
       },
       "ref": null,
@@ -373,6 +435,18 @@ ShallowWrapper {
           ],
           "type": "h1",
         },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "favorite",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "favorite",
+          "type": "button",
+        },
       ],
       "type": "div",
     },
@@ -392,10 +466,14 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Card
-    class="wheeled"
-    model="Digger Crawler"
-    name="Sand Crawler"
-    passengers="30"
+    info={
+        Object {
+            "class": "wheeled",
+            "model": "Digger Crawler",
+            "name": "Sand Crawler",
+            "passengers": "30",
+          }
+    }
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -422,6 +500,11 @@ ShallowWrapper {
         <h1>
           30
 </h1>,
+        <button
+          onClick={[Function]}
+>
+          favorite
+</button>,
       ],
     },
     "ref": null,
@@ -470,6 +553,18 @@ ShallowWrapper {
         "rendered": "30",
         "type": "h1",
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "favorite",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "favorite",
+        "type": "button",
+      },
     ],
     "type": "div",
   },
@@ -492,6 +587,11 @@ ShallowWrapper {
           <h1>
             30
 </h1>,
+          <button
+            onClick={[Function]}
+>
+            favorite
+</button>,
         ],
       },
       "ref": null,
@@ -539,6 +639,18 @@ ShallowWrapper {
           "ref": null,
           "rendered": "30",
           "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "favorite",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "favorite",
+          "type": "button",
         },
       ],
       "type": "div",

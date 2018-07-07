@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AsideContainer matches the snapshot 1`] = `undefined`;
+
+exports[`AsideContainer should return opening scroll when pass film 1`] = `
+<AsideContainer
+  film={
+    Object {
+      "openingCrawl": "IT'S A WAR",
+      "releaseDate": "1977-05-25",
+      "title": "A NEW HOPE",
+    }
+  }
+/>
+`;
