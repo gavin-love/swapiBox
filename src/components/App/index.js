@@ -56,7 +56,7 @@ class App extends Component {
   };
 
   getFavorites = favorite => {
-    const favorites = [...this.state.favorites];
+    let favorites = [...this.state.favorites];
 
     if (
       !favorites.find(favoriteInState => favoriteInState.name === favorite.name)
@@ -64,10 +64,16 @@ class App extends Component {
       favorites = [...this.state.favorites, favorite];
     } else {
       favorites = favorites.filter(
-        favoriteInState => favoriteInState.name != favorite.name
+        favoriteInState => favoriteInState.name !== favorite.name
       );
     }
     this.setState({ favorites });
+  };
+
+  displayFavorites = () => {
+    this.setState({
+      display: this.state.favorites
+    });
   };
 
   render() {

@@ -26,14 +26,14 @@ class ApiFetchDataCleaner {
     const response = await fetch(url);
     const people = await response.json();
 
-    const mapPeople = people.results.map(person => HomeAndSpecies(person));
+    const mapPeople = people.results.map(person => this.HomeAndSpecies(person));
     return Promise.all(mapPeople);
   };
 
   HomeAndSpecies = async person => {
-    const homeworld = await homeworldFetch(person.homeworld);
-    const species = await speciesFetch(person.species);
-    const newPeople = createPerson({
+    const homeworld = await this.homeworldFetch(person.homeworld);
+    const species = await this.speciesFetch(person.species);
+    const newPeople = this.createPerson({
       ...person,
       homeworld,
       species
@@ -65,18 +65,18 @@ class ApiFetchDataCleaner {
   //planets///
 
   allPlanets = async () => {
-    const url = `https://swapi.co/api/films`;
+    const url = `https://swapi.co/api/planets`;
     const response = await fetch(url);
     const planets = await response.json();
 
     const mapPlanets = planets.results.map(planet =>
-      planetAndResidents(planet)
+      this.planetAndResidents(planet)
     );
     return Promise.all(mapPlanets);
   };
 
   planetAndResidents = async planet => {
-    const residents = await residentsFetch(planet.residents);
+    const residents = await this.residentsFetch(planet.residents);
     return { ...planet, residents };
   };
 
@@ -91,7 +91,7 @@ class ApiFetchDataCleaner {
   //vehicles//
 
   allVehicles = async () => {
-    const url = `https://swapi.co/api/films`;
+    const url = `https://swapi.co/api/vehicles`;
     const response = await fetch(url);
     const vehiclesData = await response.json();
 
