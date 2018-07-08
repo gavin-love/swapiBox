@@ -15,11 +15,11 @@ class App extends Component {
       favorites: [],
       display: []
     };
-    this.api = new ApiFetchDataCleaner();
+    this.fetchData = new ApiFetchDataCleaner();
   }
 
   async componentDidMount() {
-    const films = await this.api.allFilms();
+    const films = await this.fetchData.allFilms();
     const randomNumber = Math.floor(Math.random() * 6);
     const film = films[randomNumber];
     this.setState({ film });
@@ -27,7 +27,7 @@ class App extends Component {
 
   getPeople = async () => {
     if (!this.state.people.length) {
-      const people = await this.api.allPeople();
+      const people = await this.fetchData.allPeople();
       this.setState({ people });
     }
     this.setDisplay("people");
@@ -35,7 +35,7 @@ class App extends Component {
 
   getPlanets = async () => {
     if (!this.state.planets.length) {
-      const planets = await this.api.allPlanets();
+      const planets = await this.fetchData.allPlanets();
       this.setState({ planets });
     }
     this.setDisplay("planets");
@@ -43,7 +43,7 @@ class App extends Component {
 
   getVehicles = async () => {
     if (!this.state.vehicles.length) {
-      const vehicles = await this.api.allVehicles();
+      const vehicles = await this.fetchData.allVehicles();
       this.setState({ vehicles });
     }
     this.setDisplay("vehicles");
@@ -70,18 +70,12 @@ class App extends Component {
     this.setState({ favorites });
   };
 
-  displayFavorites = () => {
-    this.setState({
-      display: this.state.favorites
-    });
-  };
-
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">SwapiBox</h1>
-          <button onClick={() => this.displayFavorites()}>
+          <button onClick={() => this.setDisplay("favorites")}>
             display favorites
           </button>
         </header>
