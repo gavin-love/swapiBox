@@ -1,81 +1,73 @@
 import React, { Component } from "react";
 import "./index.css";
-import { initialFetch } from "../../apiCalls.js";
 import { Buttons } from "../navigationButtonContainer";
 import { AsideContainer } from "../AsideContainer";
 import CardContainer from "../CardContainer";
-
+import ApiFetchDataCleaner from "../ApiFetchDataCleaner";
 class App extends Component {
   constructor() {
     super();
-
     this.state = {
-      cards: [],
       film: [],
-      favorites: []
+      people: [],
+      planets: [],
+      vehicles: [],
+      favorites: [],
+      display: []
     };
+    this.api = new ApiFetchDataCleaner();
   }
 
   async componentDidMount() {
-    const url = "https://swapi.co/api/films";
-    const films = await initialFetch(url);
+    const films = await this.api.allFilms();
     const randomNumber = Math.floor(Math.random() * 6);
     const film = films[randomNumber];
-
-    this.setState({
-      film
-    });
+    this.setState({ film });
   }
 
-  handleSubmit = async string => {
-    switch (string) {
-      case "people":
-        const people = await initialFetch(
-          `https://swapi.co/api/${string}`,
-          string
-        );
-        this.setState({
-          cards: people
-        });
-        break;
-      case "planets":
-        const planets = await initialFetch(
-          `https://swapi.co/api/${string}`,
-          string
-        );
-        this.setState({
-          cards: planets
-        });
-        break;
-      case "vehicles":
-        const vehicles = await initialFetch(
-          `https://swapi.co/api/${string}`,
-          string
-        );
-        this.setState({
-          cards: vehicles
-        });
-        break;
+  getPeople = async () => {
+    if (!this.state.people.length) {
+      const people = await this.api.allPeople();
+      this.setState({ people });
     }
+    this.setDisplay("people");
   };
 
-  handleFavorites = favorite => {
-    //if it not in favorites add it and give card addtional class
-    //
-    ///map over each object and remove match : const favorites = [...this.state.favorites, favorite]
+  getPlanets = async () => {
+    if (!this.state.planets.length) {
+      const planets = await this.api.allPlanets();
+      this.setState({ planets });
+    }
+    this.setDisplay("planets");
+  };
 
-    this.state.favorites.includes(favorite);
-    const favorites = [...this.state.favorites, favorite];
+  getVehicles = async () => {
+    if (!this.state.vehicles.length) {
+      const vehicles = await this.api.allVehicles();
+      this.setState({ vehicles });
+    }
+    this.setDisplay("vehicles");
+  };
 
+  setDisplay = type => {
     this.setState({
-      favorites
+      display: this.state[type]
     });
   };
 
-  displayFavorites = () => {
-    this.setState({
-      cards: this.state.favorites
-    });
+  getFavorites = favorite => {
+    const favorites = [...this.state.favorites];
+
+    if (
+      !favorites.find(favoriteInState => favoriteInState.name === favorite.name)
+    ) {
+      favorites = [...this.state.favorites, favorite];
+    } else {
+      favorites = favorites.filter(
+        favoriteInState => favoriteInState.name != favorite.name
+      );
+    }
+    this.setState({ favorites });
   };
 
   render() {
@@ -87,13 +79,14 @@ class App extends Component {
             display favorites
           </button>
         </header>
-        <Buttons handleSubmit={this.handleSubmit} />
+        <Buttons
+          getPeople={this.getPeople}
+          getPlanets={this.getPlanets}
+          getVehicles={this.getVehicles}
+        />
         <aside>
           <AsideContainer film={this.state.film} />
-          <CardContainer
-            cards={this.state.cards}
-            handleFavorites={this.handleFavorites}
-          />
+          <CardContainer cards={this.state} getFavorites={this.getFavorites} />
         </aside>
       </div>
     );
