@@ -21,7 +21,8 @@
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}",
-      "!src/index.js"
+      "!src/index.js",
+      "!src/registerServiceWorker.js"
     ]
   },
   "eslintConfig": {

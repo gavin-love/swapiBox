@@ -1,17 +1,25 @@
 import React from "react";
+import "./index.css";
+import PropTypes from "prop-types";
 
 export const Buttons = ({ getPeople, getPlanets, getVehicles }) => {
   return (
-    <div>
-      <button className="people-button" onClick={() => getPeople()}>
+    <div className="buttons-container">
+      <button className="buttons" onClick={() => getPeople()}>
         People
       </button>
-      <button className="planets-button" onClick={() => getPlanets()}>
+      <button className="buttons" onClick={() => getPlanets()}>
         Planets
       </button>
-      <button className="vehicles-button" onClick={() => getVehicles()}>
+      <button className="buttons" onClick={() => getVehicles()}>
         Vehicle
       </button>
     </div>
   );
+};
+
+Buttons.propTypes = {
+  getPeople: PropTypes.func,
+  getPlanets: PropTypes.func,
+  getVehicles: PropTypes.func
 };
