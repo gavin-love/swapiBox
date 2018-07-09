@@ -1,10 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import ApiFetchDataCleaner from "../ApiFetchDataCleaner/index.js";
 import App from "../App/index.js";
 import { shallow } from "enzyme";
-import renderer from "react-test-renderer";
-import { runMain } from "module";
 
 jest.mock("../ApiFetchDataCleaner/index.js", () => {
   return jest.fn().mockImplementation(() => {

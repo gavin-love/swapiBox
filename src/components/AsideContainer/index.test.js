@@ -1,6 +1,5 @@
 import React from "react";
 import { AsideContainer } from "./index.js";
-import { shallow } from "enzyme";
 
 describe("AsideContainer", () => {
   let wrapper;
