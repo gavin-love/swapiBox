@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "./index.css";
+import "../navigationButtonContainer/index.css";
+import "../Card/index.css";
 import { Buttons } from "../navigationButtonContainer";
 import { AsideContainer } from "../AsideContainer";
 import CardContainer from "../CardContainer";
@@ -84,10 +86,8 @@ class App extends Component {
           getPlanets={this.getPlanets}
           getVehicles={this.getVehicles}
         />
-        <aside>
-          <AsideContainer film={this.state.film} />
-          <CardContainer cards={this.state} getFavorites={this.getFavorites} />
-        </aside>
+        <AsideContainer film={this.state.film} />
+        <CardContainer cards={this.state} getFavorites={this.getFavorites} />
       </div>
     );
   }

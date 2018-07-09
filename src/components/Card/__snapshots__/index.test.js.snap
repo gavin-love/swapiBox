@@ -30,15 +30,19 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <h1>
+          Name: 
           Luke Skywalker
 </h1>,
         <h1>
+          Home World: 
           Tatooine
 </h1>,
         <h1>
+          Species: 
           Human
 </h1>,
         <h1>
+          Population: 
           200000
 </h1>,
         <button
@@ -47,6 +51,7 @@ ShallowWrapper {
           favorite
 </button>,
       ],
+      "className": "card",
     },
     "ref": null,
     "rendered": Array [
@@ -55,10 +60,16 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Luke Skywalker",
+          "children": Array [
+            "Name: ",
+            "Luke Skywalker",
+          ],
         },
         "ref": null,
-        "rendered": "Luke Skywalker",
+        "rendered": Array [
+          "Name: ",
+          "Luke Skywalker",
+        ],
         "type": "h1",
       },
       Object {
@@ -66,10 +77,16 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Tatooine",
+          "children": Array [
+            "Home World: ",
+            "Tatooine",
+          ],
         },
         "ref": null,
-        "rendered": "Tatooine",
+        "rendered": Array [
+          "Home World: ",
+          "Tatooine",
+        ],
         "type": "h1",
       },
       Object {
@@ -77,10 +94,16 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Human",
+          "children": Array [
+            "Species: ",
+            "Human",
+          ],
         },
         "ref": null,
-        "rendered": "Human",
+        "rendered": Array [
+          "Species: ",
+          "Human",
+        ],
         "type": "h1",
       },
       Object {
@@ -88,10 +111,16 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "200000",
+          "children": Array [
+            "Population: ",
+            "200000",
+          ],
         },
         "ref": null,
-        "rendered": "200000",
+        "rendered": Array [
+          "Population: ",
+          "200000",
+        ],
         "type": "h1",
       },
       Object {
@@ -117,15 +146,19 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h1>
+            Name: 
             Luke Skywalker
 </h1>,
           <h1>
+            Home World: 
             Tatooine
 </h1>,
           <h1>
+            Species: 
             Human
 </h1>,
           <h1>
+            Population: 
             200000
 </h1>,
           <button
@@ -134,6 +167,7 @@ ShallowWrapper {
             favorite
 </button>,
         ],
+        "className": "card",
       },
       "ref": null,
       "rendered": Array [
@@ -142,10 +176,16 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Luke Skywalker",
+            "children": Array [
+              "Name: ",
+              "Luke Skywalker",
+            ],
           },
           "ref": null,
-          "rendered": "Luke Skywalker",
+          "rendered": Array [
+            "Name: ",
+            "Luke Skywalker",
+          ],
           "type": "h1",
         },
         Object {
@@ -153,10 +193,16 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Tatooine",
+            "children": Array [
+              "Home World: ",
+              "Tatooine",
+            ],
           },
           "ref": null,
-          "rendered": "Tatooine",
+          "rendered": Array [
+            "Home World: ",
+            "Tatooine",
+          ],
           "type": "h1",
         },
         Object {
@@ -164,10 +210,16 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Human",
+            "children": Array [
+              "Species: ",
+              "Human",
+            ],
           },
           "ref": null,
-          "rendered": "Human",
+          "rendered": Array [
+            "Species: ",
+            "Human",
+          ],
           "type": "h1",
         },
         Object {
@@ -175,10 +227,16 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "200000",
+            "children": Array [
+              "Population: ",
+              "200000",
+            ],
           },
           "ref": null,
-          "rendered": "200000",
+          "rendered": Array [
+            "Population: ",
+            "200000",
+          ],
           "type": "h1",
         },
         Object {
@@ -240,19 +298,23 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <h1>
+          Name: 
           Alderaan
 </h1>,
         <h1>
+          Terrain: 
           grasslands, mountains
 </h1>,
         <h1>
+          Population: 
           2000000000
 </h1>,
         <h1>
+          Climate: 
           temperate
 </h1>,
         <h1>
-          
+          Residents: 
 </h1>,
         <button
           onClick={[Function]}
@@ -260,6 +322,7 @@ ShallowWrapper {
           favorite
 </button>,
       ],
+      "className": "card",
     },
     "ref": null,
     "rendered": Array [
@@ -268,43 +331,16 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Alderaan",
+          "children": Array [
+            "Name: ",
+            "Alderaan",
+          ],
         },
         "ref": null,
-        "rendered": "Alderaan",
-        "type": "h1",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "grasslands, mountains",
-        },
-        "ref": null,
-        "rendered": "grasslands, mountains",
-        "type": "h1",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "2000000000",
-        },
-        "ref": null,
-        "rendered": "2000000000",
-        "type": "h1",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "temperate",
-        },
-        "ref": null,
-        "rendered": "temperate",
+        "rendered": Array [
+          "Name: ",
+          "Alderaan",
+        ],
         "type": "h1",
       },
       Object {
@@ -313,13 +349,68 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            undefined,
-            undefined,
-            undefined,
+            "Terrain: ",
+            "grasslands, mountains",
           ],
         },
         "ref": null,
         "rendered": Array [
+          "Terrain: ",
+          "grasslands, mountains",
+        ],
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Population: ",
+            "2000000000",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Population: ",
+          "2000000000",
+        ],
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Climate: ",
+            "temperate",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Climate: ",
+          "temperate",
+        ],
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Residents: ",
+            Array [
+              undefined,
+              undefined,
+              undefined,
+            ],
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Residents: ",
           undefined,
           undefined,
           undefined,
@@ -349,19 +440,23 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h1>
+            Name: 
             Alderaan
 </h1>,
           <h1>
+            Terrain: 
             grasslands, mountains
 </h1>,
           <h1>
+            Population: 
             2000000000
 </h1>,
           <h1>
+            Climate: 
             temperate
 </h1>,
           <h1>
-            
+            Residents: 
 </h1>,
           <button
             onClick={[Function]}
@@ -369,6 +464,7 @@ ShallowWrapper {
             favorite
 </button>,
         ],
+        "className": "card",
       },
       "ref": null,
       "rendered": Array [
@@ -377,43 +473,16 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Alderaan",
+            "children": Array [
+              "Name: ",
+              "Alderaan",
+            ],
           },
           "ref": null,
-          "rendered": "Alderaan",
-          "type": "h1",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "grasslands, mountains",
-          },
-          "ref": null,
-          "rendered": "grasslands, mountains",
-          "type": "h1",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "2000000000",
-          },
-          "ref": null,
-          "rendered": "2000000000",
-          "type": "h1",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "temperate",
-          },
-          "ref": null,
-          "rendered": "temperate",
+          "rendered": Array [
+            "Name: ",
+            "Alderaan",
+          ],
           "type": "h1",
         },
         Object {
@@ -422,13 +491,68 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              undefined,
-              undefined,
-              undefined,
+              "Terrain: ",
+              "grasslands, mountains",
             ],
           },
           "ref": null,
           "rendered": Array [
+            "Terrain: ",
+            "grasslands, mountains",
+          ],
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Population: ",
+              "2000000000",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Population: ",
+            "2000000000",
+          ],
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Climate: ",
+              "temperate",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Climate: ",
+            "temperate",
+          ],
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Residents: ",
+              Array [
+                undefined,
+                undefined,
+                undefined,
+              ],
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Residents: ",
             undefined,
             undefined,
             undefined,
@@ -489,15 +613,19 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <h1>
+          Name: 
           Sand Crawler
 </h1>,
         <h1>
+          Model: 
           Digger Crawler
 </h1>,
         <h1>
+          Class: 
           wheeled
 </h1>,
         <h1>
+          Passengers: 
           30
 </h1>,
         <button
@@ -506,6 +634,7 @@ ShallowWrapper {
           favorite
 </button>,
       ],
+      "className": "card",
     },
     "ref": null,
     "rendered": Array [
@@ -514,10 +643,16 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Sand Crawler",
+          "children": Array [
+            "Name: ",
+            "Sand Crawler",
+          ],
         },
         "ref": null,
-        "rendered": "Sand Crawler",
+        "rendered": Array [
+          "Name: ",
+          "Sand Crawler",
+        ],
         "type": "h1",
       },
       Object {
@@ -525,10 +660,16 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Digger Crawler",
+          "children": Array [
+            "Model: ",
+            "Digger Crawler",
+          ],
         },
         "ref": null,
-        "rendered": "Digger Crawler",
+        "rendered": Array [
+          "Model: ",
+          "Digger Crawler",
+        ],
         "type": "h1",
       },
       Object {
@@ -536,10 +677,16 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "wheeled",
+          "children": Array [
+            "Class: ",
+            "wheeled",
+          ],
         },
         "ref": null,
-        "rendered": "wheeled",
+        "rendered": Array [
+          "Class: ",
+          "wheeled",
+        ],
         "type": "h1",
       },
       Object {
@@ -547,10 +694,16 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "30",
+          "children": Array [
+            "Passengers: ",
+            "30",
+          ],
         },
         "ref": null,
-        "rendered": "30",
+        "rendered": Array [
+          "Passengers: ",
+          "30",
+        ],
         "type": "h1",
       },
       Object {
@@ -576,15 +729,19 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h1>
+            Name: 
             Sand Crawler
 </h1>,
           <h1>
+            Model: 
             Digger Crawler
 </h1>,
           <h1>
+            Class: 
             wheeled
 </h1>,
           <h1>
+            Passengers: 
             30
 </h1>,
           <button
@@ -593,6 +750,7 @@ ShallowWrapper {
             favorite
 </button>,
         ],
+        "className": "card",
       },
       "ref": null,
       "rendered": Array [
@@ -601,10 +759,16 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Sand Crawler",
+            "children": Array [
+              "Name: ",
+              "Sand Crawler",
+            ],
           },
           "ref": null,
-          "rendered": "Sand Crawler",
+          "rendered": Array [
+            "Name: ",
+            "Sand Crawler",
+          ],
           "type": "h1",
         },
         Object {
@@ -612,10 +776,16 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Digger Crawler",
+            "children": Array [
+              "Model: ",
+              "Digger Crawler",
+            ],
           },
           "ref": null,
-          "rendered": "Digger Crawler",
+          "rendered": Array [
+            "Model: ",
+            "Digger Crawler",
+          ],
           "type": "h1",
         },
         Object {
@@ -623,10 +793,16 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "wheeled",
+            "children": Array [
+              "Class: ",
+              "wheeled",
+            ],
           },
           "ref": null,
-          "rendered": "wheeled",
+          "rendered": Array [
+            "Class: ",
+            "wheeled",
+          ],
           "type": "h1",
         },
         Object {
@@ -634,10 +810,16 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "30",
+            "children": Array [
+              "Passengers: ",
+              "30",
+            ],
           },
           "ref": null,
-          "rendered": "30",
+          "rendered": Array [
+            "Passengers: ",
+            "30",
+          ],
           "type": "h1",
         },
         Object {
